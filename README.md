@@ -23,10 +23,10 @@ rye-monorepo
 │   │   ├── domain
 │   │   │   ├── __init__.py
 │   │   │   └── recipe.py
-│   │   ├── infrastructure
-│   │   │   ├── __init__.py
-│   │   │   └── openai_client
-│   │   │       └── __init__.py
+│   │   └── infrastructure
+│   │       ├── __init__.py
+│   │       └── openai_client
+│   │           └── __init__.py
 │   └── pyproject.toml
 │
 ├── pyproject.toml
