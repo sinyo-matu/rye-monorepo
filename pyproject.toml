@@ -1,0 +1,27 @@
+[project]
+name = "rye-workspace"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Yang Qin", email = "qin.yang@emotion-tech.co.jp" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = "3.11.5"
+
+[project.scripts]
+hello = "rye_workspace:hello"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = []
+
+[tool.rye.scripts]
+run-app1 = "uvicorn app1.app:app --reload --port 8080"
+
+[tool.rye.workspace]
+members = [
+    "lib",
+    "app1",
+]
